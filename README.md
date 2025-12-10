@@ -13,8 +13,9 @@ This pipeline collects spoken responses through Qualtrics surveys and automatica
 ## How It Works
 
 **Frontend:** Qualtrics XM handles the web survey interface and audio recording capabilities.
+
 <p align="center">
-  <img src="images/Qualtrics question flow.jpg" alt="Alt text">
+  <img src="images/Qualtrics question flow.jpg" alt="Alt text" height="400">
 </p>
 
 **Backend:** A GCP cloud server processes incoming API calls from Qualtrics and performs three main operations:
