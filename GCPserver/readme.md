@@ -168,4 +168,4 @@ gcloud run deploy audio-transcription-service \
 
 ## License
 
-[Your License Here]
+[LICENSE]
