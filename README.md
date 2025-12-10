@@ -26,6 +26,14 @@ This pipeline collects spoken responses through Qualtrics surveys and automatica
   <img src="images/Datapipeline.png" alt="Alt text">
 </p>
 
+**Monitoring Dashboard:** A Shiny application provides real-time visualization of survey responses for administrators.
+
+4. **Data Visualization** - The Shiny dashboard makes API calls to Qualtrics to fetch response data in JSON format and displays:
+   - Word cloud of transcribed responses
+   - Distribution of proximity scores
+   
+   The dashboard is hosted on Shinyapps.io, providing a more flexible and user-friendly alternative to Qualtrics' built-in visualization tools. Note that the application loads on-demand when the URL is visited, which may result in initial loading delays as it fetches and processes data.
+
 ## Key Features
 
 - Real-time audio processing without expensive Qualtrics storage fees
@@ -40,6 +48,7 @@ This pipeline collects spoken responses through Qualtrics surveys and automatica
 - **Storage:** GCP Cloud Storage
 - **Transcription:** GCP Speech-to-Text API
 - **Scoring:** Levenshtein distance algorithm
+- **Visualization Dashboard:** Shiny (hosted on Shinyapps.io)
 
 ## Future Considerations
 
