@@ -2,10 +2,6 @@
 
 A real-time audio processing pipeline that integrates Qualtrics XM web surveys with Google Cloud Platform services to capture, transcribe, and score spoken responses.
 
-<p align="center">
-  <img src="images/Datapipeline.png" alt="Alt text">
-</p>
-
 ## Overview
 
 This pipeline collects spoken responses through Qualtrics surveys and automatically processes them in real-time using GCP services. The system provides an affordable alternative to Qualtrics' audio storage subscription by handling storage, transcription, and analysis on Google Cloud.
@@ -25,6 +21,10 @@ This pipeline collects spoken responses through Qualtrics surveys and automatica
 2. **Speech Transcription** - Sends audio files to GCP's Speech-to-Text API for transcription. Returns the transcribed text along with a confidence score for quality control purposes.
 
 3. **Proximity Scoring** - Calculates how close the transcribed response is to a target word using Levenshtein distance. The score is computed as: `(1 - levDistance / maxLen) × 100` where maxLen is the maximum length between target and transcribed words.
+
+<p align="center">
+  <img src="images/Datapipeline.png" alt="Alt text">
+</p>
 
 ## Key Features
 
